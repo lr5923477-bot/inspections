@@ -21,7 +21,8 @@ body {
   font-family: "Segoe UI", Arial, Helvetica, sans-serif;
   background: var(--light);
   color: var(--dark);
-  line-height: 1.6;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
 }
 
 img {
@@ -40,26 +41,32 @@ a {
   margin: auto;
 }
 
+/* SECTIONS */
 .section {
-  padding: 80px 0;
+  padding: 90px 0;
 }
 
 .section.light {
   background: white;
 }
 
-h1, h2, h3, h4 {
+/* HEADINGS */
+h1,
+h2,
+h3,
+h4 {
   font-weight: 600;
   color: var(--navy);
+  line-height: 1.25;
 }
 
 h2 {
-  font-size: 42px;
+  font-size: 40px;
 }
 
 h3 {
-  font-size: 32px;
-  margin-bottom: 30px;
+  font-size: 30px;
+  margin-bottom: 28px;
 }
 
 h4 {
@@ -67,18 +74,34 @@ h4 {
   margin-bottom: 10px;
 }
 
+/* TEXT */
 p {
   color: var(--gray);
+  max-width: 780px;
+}
+
+p + p {
+  margin-top: 14px;
 }
 
 .center-note {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 22px;
   font-style: italic;
 }
 
+/* PRICING */
 .price {
   font-size: 22px;
   font-weight: 600;
   color: var(--navy);
+}
+
+/* LIST REFINEMENT (used on area & services pages) */
+ul {
+  padding-left: 18px;
+}
+
+li {
+  margin-bottom: 10px;
 }
