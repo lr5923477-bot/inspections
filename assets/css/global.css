@@ -1,1 +1,84 @@
-/* Global Professional Styling */
+/* =========================
+   GLOBAL STYLES
+   All American Inspections
+========================= */
+
+:root {
+  --navy: #0b2c5f;
+  --gold: #d4af37;
+  --light: #f5f7fb;
+  --dark: #1c1c1c;
+  --gray: #6b7280;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  background: var(--light);
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.section.light {
+  background: white;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 600;
+  color: var(--navy);
+}
+
+h2 {
+  font-size: 42px;
+}
+
+h3 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: var(--gray);
+}
+
+.center-note {
+  text-align: center;
+  margin-top: 20px;
+  font-style: italic;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--navy);
+}
